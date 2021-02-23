@@ -10,7 +10,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>                <!--1-->
 
-  <name>book-sia-ch01-taco-cloud</name>
+  <name>book-sia5-ch01-taco-cloud</name>
   <description>Taco Cloud Example</description>
 
   <parent>

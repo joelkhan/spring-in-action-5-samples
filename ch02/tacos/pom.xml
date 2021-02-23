@@ -10,7 +10,7 @@
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>taco-cloud</name>
+  <name>book-sia5-ch02-taco-cloud</name>
   <description>Taco Cloud Example</description>
 
   <parent>
@@ -21,10 +21,8 @@
   </parent>
 
   <properties>
-    <project.build.sourceEncoding>
-        UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>
-        UTF-8</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
 
@@ -71,6 +69,8 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
 
+    <!-- 这个依赖将会在开发阶段为你提供Lombok注解（例如@Data），并且会在运行时进行自动化的方法生成。
+    此外，还需要将Lombok作为扩展添加到IDE上，否则我们的IDE将会报错，提示缺少方法和final属性没有赋值。 -->
     <dependency>
     	<groupId>org.projectlombok</groupId>
     	<artifactId>lombok</artifactId>

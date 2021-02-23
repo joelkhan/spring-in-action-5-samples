@@ -3,6 +3,9 @@ package tacos;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+/*
+ * 类级别的@Data注解是由Lombok库提供的
+ * */
 @Data
 @RequiredArgsConstructor
 public class Ingredient {
