@@ -1,5 +1,5 @@
-// tag::baseClass[]
 package tacos.web;
+
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
@@ -19,26 +19,20 @@ import tacos.Order;
 @RequestMapping("/orders")
 public class OrderController {
   
-//end::baseClass[]
-//tag::orderForm[]
   @GetMapping("/current")
   public String orderForm(Model model) {
     model.addAttribute("order", new Order());
     return "orderForm";
   }
-//end::orderForm[]
 
 /*
-//tag::handlePost[]
   @PostMapping
   public String processOrder(Order order) {
     log.info("Order submitted: " + order);
     return "redirect:/";
   }
-//end::handlePost[]
 */
   
-//tag::handlePostWithValidation[]
   @PostMapping
   public String processOrder(@Valid Order order, Errors errors) {
     if (errors.hasErrors()) {
@@ -48,9 +42,6 @@ public class OrderController {
     log.info("Order submitted: " + order);
     return "redirect:/";
   }
-//end::handlePostWithValidation[]
-  
-//tag::baseClass[]
-  
+
 }
-//end::baseClass[]
+
