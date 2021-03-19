@@ -3,13 +3,14 @@ package tacos;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller            // <1>
+@Controller
 public class HomeController {
 
-  @GetMapping("/")     // <2>
+  @GetMapping("/")
   public String home() {
     System.out.println("in HomeController");
-    return "home";     // <3>
+    return "home";
   }
 
-}
+} // ::HomeController
+
